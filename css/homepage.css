@@ -1,0 +1,45 @@
+:root {
+    --main-theme-color: #23153c;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#background_animation {
+    z-index: -2;
+    position: absolute;
+    display: block;
+    min-width: 100%;
+    min-height: 100vh;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.everything {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:100px;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    max-width: 1100px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.homepage_title {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 7px;            /* gap between title and search bar */
+}
+
+.homepage_title_description {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 35px;
+}
