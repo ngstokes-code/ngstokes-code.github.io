@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- page info -->
+    <title>Nicholas Stokes - 2D Platformer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap via cdn, page font, custom css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+
+    <!-- jQuery via cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/index.html">Nicholas Stokes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- "Home" -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+        <!-- "2D Platformer Game" -->
+                <li class="nav-item active"> <!-- highlight current page -->
+                    <a class="nav-link" href="/platformer.html">2D Platformer Game</a>
+                </li>
+        <!-- additional items will go here -->
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- iframe to embed webgl game -->
+    <div class="everything">
+            <iframe id="game" src="2dp_unity/index.html" width="1000px" height="700px" frameborder="0" marginheight="0" scrolling="no"></iframe>
+    </div>
+
+    <!-- background animation -->
+    <div id="background_animation"></div>
+
+    <!-- vanta.js -->
+    <script src="js/three.r119.min.js"></script>
+    <script src="js/vanta.net.min.js"></script>
+
+    <!-- homepage.js (bg animation settings)-->
+    <script src="js/homepage.js"></script>
+
+    <!-- jQuery & Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
