@@ -1,0 +1,115 @@
+:root {
+    --main-theme-color: #23153c;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+#background_animation {
+    z-index: -2;
+    position: fixed;
+    display: block;
+    min-width: 100%;
+    min-height: 100vh;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.everything {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:100px;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    margin-left: 5%;                /* small gap so browser resize doesnt touch results */
+    margin-right: 5%;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* search bar... auto makes it horizontally centered */
+form {
+    width: 100%;
+    opacity: 90%;
+    max-width: 650px;               /* screensize > 650 --> search bar 650px wide */ 
+    margin: 20px auto 20px auto;    /* left right auto for responsiveness */ 
+    background-color:#ffffff;     /* color of search bar */ 
+    border-radius: 15px;            /* round edges on search bar */
+}
+
+form input {
+    width: 100%;                    /* makes entire search bar usable */
+    color: #000000;               /* color of user-entered text (not placeholder text) */ 
+    background-color: transparent;  /* input should not color the search bar */
+    padding: 12px;                  /* pads the search bar placeholder text (on all 4 sides) */ 
+    border-color: transparent;      /* removes black line around the bar */
+    outline: none;                  /* remove outline search bar is clicked */ 
+    display: inline-block;          /* dont display vertically */
+    font-size: 24px;
+}
+
+/* add photoshop recipe banner maybe? */
+.search-title {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 20px;            /* gap between title and search bar */
+}
+
+.all-recipes {
+    width: 100%;
+    display: grid;                  /* display results in a grid */
+    grid-gap: 30px;                 /* gap between rows, columns */      
+    grid-template: auto / repeat(auto-fit, minmax(250px, 1fr));  
+    /* grid source/help: https://css-tricks.com/snippets/css/complete-guide-grid/ 
+    "rows / cols." -- auto determine rows, columns depends on browser size. 
+    repeat(#cols, col width);. Auto-fit collapses entries on browser resize.
+    minmax() for responsiveness. Min ###px, max 1fr (1 part of whole) */
+    margin-top: 60px;               /* gap between search bar and results */
+    margin-bottom: 100px;
+}
+
+.recipe-content {
+    color: #FFFFFF;
+    text-align: center;
+    overflow: hidden;
+    height: 150px;
+}
+
+.recipe-name {
+    font-size: 24px;
+}
+
+.recipe-info {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* styling for the text that appears when there are no results to display */ 
+.no-results {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.footer {
+    margin-bottom: 150px;
+    margin-left: 23%;
+    margin-right: 23%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
